@@ -1,0 +1,1 @@
+for i in `seq 10`; do ./task1.out; done
