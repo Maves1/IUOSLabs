@@ -22,7 +22,6 @@ char** getSplitCommand(int stringLength, char* userCommand) {
     token = strtok(userCommand, delimiter);
     int i = 0;
     while (token != NULL) {
-//        printf("Token %d: %s\n", i, token);
 
         arrayOfParameters[i] = malloc(strlen(token) * sizeof(char));
         strcpy(arrayOfParameters[i], token);
@@ -43,12 +42,10 @@ int main() {
 
     char userCommand[50];
 
-    promptForInput();
-    fgets(userCommand, sizeof(userCommand), stdin);
-    userCommand[strcspn(userCommand, "\n")] = 0;
-
     while (strcmp(userCommand, "exit")) {
-
+        promptForInput();
+        fgets(userCommand, sizeof(userCommand), stdin);
+        userCommand[strcspn(userCommand, "\n")] = 0;
         char **args = getSplitCommand(strlen(userCommand), userCommand);
 
         int n = fork();
@@ -57,10 +54,6 @@ int main() {
         }
 
         fflush(stdin);
-        promptForInput();
-        fgets(userCommand, sizeof(userCommand), stdin);
-        userCommand[strcspn(userCommand, "\n")] = 0;
-
         free(args);
     }
     return 0;
