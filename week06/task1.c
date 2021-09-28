@@ -8,11 +8,11 @@ void bubbleSort(int n, int *arrivalTimes, int *burstTimes) {
             if (arrivalTimes[j] < arrivalTimes[j - 1]) {
                 int t = arrivalTimes[j];
                 arrivalTimes[j] = arrivalTimes[j - 1];
-                arrivalTimes[j - 1] = arrivalTimes[j];
+                arrivalTimes[j - 1] = t;
 
                 t = burstTimes[j];
                 burstTimes[j] = burstTimes[j - 1];
-                burstTimes[j - 1] = burstTimes[j];
+                burstTimes[j - 1] = t;
             }
         }
     }
@@ -53,7 +53,7 @@ int *getCompletionTimes(int n, int *burstTimes, int *waitingTimes, int *arrivalT
 
 int main() {
 
-    int numberOfProcesses = 2;
+    int numberOfProcesses = 5;
     int arrivalTimes[numberOfProcesses];
     int burstTimes[numberOfProcesses];
 
