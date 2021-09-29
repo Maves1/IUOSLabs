@@ -1,0 +1,2 @@
+   text	   data	    bss	    dec	    hex	filename
+   1450	    544	     16	   2010	    7da	task1.out
