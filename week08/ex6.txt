@@ -1,0 +1,5 @@
+We have 8KB pages and 16-bit addresses.
+8KB = 8192 bytes. Therefore, we need 13 bits to specify the offset for each page (2^13 = 8192).
+It means that we have 3 bits left, and 2^3 = 8, which gives us 8 page table entries
+
+Answer: our table will have 8 pages
