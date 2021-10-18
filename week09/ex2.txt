@@ -1,0 +1,11 @@
+We know that the algorithm removes the oldest page, so in order to maximize the number of misses
+we can make the number of pages bigger than the number of frames and call them sequentially (this one is not necessary,
+but I decided to do it this way)
+The example test:
+2 5
+1 1
+2 2
+3 3
+4 1
+5 2
+This test will have 0 hits
