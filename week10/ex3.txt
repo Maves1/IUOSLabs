@@ -1,0 +1,7 @@
+chmod a-x _ex3.txt
+chmod uo+rwx _ex3.txt
+chmod g=u _ex3.txt
+
+660 means -rw-rw---- (rw permissions for user, group, and no permissions for others)
+775 means -rwxrwxr-x (all permissions for user, group, and no write permission for others)
+777 means -rwxrwxrwx (all permissions for everyone)

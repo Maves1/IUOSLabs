@@ -1,0 +1,5 @@
+total 12
+29497218 -rw-rw-r-- 3 maves maves 29 Oct 21 19:08 _ex1_1.txt
+29497218 -rw-rw-r-- 3 maves maves 29 Oct 21 19:08 _ex1_2.txt
+29497218 -rw-rw-r-- 3 maves maves 29 Oct 21 19:08 _ex1.txt
+29497258 -rw-rw-r-- 1 maves maves  0 Oct 21 19:11 ex1.txt
