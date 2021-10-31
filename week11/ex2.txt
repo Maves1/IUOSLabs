@@ -1,0 +1,32 @@
+// changed root
+bin
+ex2.out
+ex2.txt
+lib64
+lib
+lost+found
+
+// initial root
+lib
+lib32
+libx32
+etc
+opt
+boot
+lost+found
+run
+sys
+proc
+tmp
+root
+recovery
+var
+bin
+srv
+dev
+home
+mnt
+sbin
+usr
+media
+lib64
