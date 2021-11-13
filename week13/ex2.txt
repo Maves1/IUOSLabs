@@ -1,0 +1,21 @@
+Recovery, avoidance, prevention
+
+Recovery
+Recovery (simply killing a process) might be an effective solution
+when we can afford computing something for a little bit longer,
+and inventing some sophisticated avoidance or prevention algorithms
+is not really necessary.
+
+Avoidance
+Even though it is hard to predict what resources will be used by
+processes (and the exact moments in time when they will be needed),
+there still might be some systems with a strictly defined behaviour.
+In that case, I suppose, avoidance will be the best solution.
+
+Prevention
+I think we can effectively prevent deadlocks from happening in some 
+limited environments. For example, we might be 100% sure that processes
+don't need more than 1 resource (just according to the structure of the
+abstract environment we are working in). Therefore, we can simply 
+prohibit requesting a new resource when a process already has something 
+in use.
